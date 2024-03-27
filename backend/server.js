@@ -128,7 +128,38 @@ app.post('/api/login', (req, res) => {
     }
   });
 });
+app.post('/squad_info', (req, res) => {
+  const { team1Players, team2Players, team1, team2, matchID } = req.body;
 
+  // Prepare the SQL query to insert data into the database
+  const insertQuery = `
+    INSERT INTO Squad_info (player_name, matchID, team, role)
+    VALUES (?, ?, ?, ?)
+  `;
+
+  // Helper function to insert player data into the database
+  const insertPlayerData = (playerData, teamName) => {
+    playerData.forEach(({ name, role }) => {
+      connection.query(
+        insertQuery,
+        [name, matchID, teamName, role],
+        (error, results) => {
+          if (error) {
+            console.error('Error inserting player data:', error);
+          }
+        }
+      );
+    });
+  };
+
+  // Insert team 1 player data
+  insertPlayerData(team1Players, team1);
+
+  // Insert team 2 player data
+  insertPlayerData(team2Players, team2);
+
+  res.status(200).json({ message: 'Squad data saved successfully' });
+});
 // Function to send session expired message to previous two tabs
 function sendSessionExpiredMessage(username) {
   // Query to get session IDs of the previous two sessions for the user
