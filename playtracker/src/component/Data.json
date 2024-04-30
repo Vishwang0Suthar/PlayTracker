@@ -1,0 +1,43 @@
+{
+    "battingTeam": "Team A",
+    "bowlingTeam": "Team B",
+    "battingTeamScore": 180,
+    "battingTeamWickets": 5,
+    "battingTeamOvers": 20,
+    "bowlingTeamScore": 170,
+    "bowlingTeamWickets": 8,
+    "bowlingTeamOvers": 20,
+    "batsmen": [
+      {
+        "name": "Batsman 1",
+        "runs": 50,
+        "balls": 40,
+        "fours": 4,
+        "sixes": 2
+      },
+      {
+        "name": "Batsman 2",
+        "runs": 30,
+        "balls": 25,
+        "fours": 2,
+        "sixes": 1
+      }
+    ],
+    "bowlers": [
+      {
+        "name": "Bowler 1",
+        "overs": 4,
+        "maidens": 1,
+        "runs": 30,
+        "wickets": 2
+      },
+      {
+        "name": "Bowler 2",
+        "overs": 4,
+        "maidens": 0,
+        "runs": 35,
+        "wickets": 1
+      }
+    ]
+  }
+  

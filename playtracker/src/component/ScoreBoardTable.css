@@ -1,0 +1,168 @@
+/* user_score.css */
+
+.scoreboard-table {
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-scores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.team-score {
+  text-align: center;
+}
+
+.team-score h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.team-score p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.batsmen-table,
+.bowlers-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.batsmen-table h3,
+.bowlers-table h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #1d415f;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+.bowler-info {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.bowler-info h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.bowler-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .team-scores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-score {
+    margin-bottom: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+/* user_score.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #1d415f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .menu li {
+  margin-left: 20px;
+}
+
+nav .menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+  color: #ddd;
+}
+
+/* Scoreboard Styles */
+.scoreboard-table {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (existing scoreboard styles) ... */

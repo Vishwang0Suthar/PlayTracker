@@ -1,0 +1,100 @@
+/* Card.css */
+
+.card-container {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  background: linear-gradient(to right, #385c7b, #83aedb);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.matches-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  position: relative;
+}
+
+.match-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.match-details {
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.team-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team {
+  font-weight: bold;
+  margin: 5px;
+  color: #0d47a1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.vs {
+  margin: 0 10px;
+  color: #e53935;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  margin-top: 10px;
+  color: #555;
+}
+
+.matches-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-button {
+  background-color: #20405c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.scroll-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.2);
+}

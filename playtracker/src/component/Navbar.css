@@ -1,0 +1,153 @@
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #122638, #1d415f);
+    color: #fff;
+    padding: 15px 0;
+}
+
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    margin-right: 50px;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s; /* Slower transition */
+}
+
+.nav-links li a:hover {
+    color: #6e96b9; /* Adjusted hover color */
+    background: linear-gradient(135deg, #6e96b9, #1d415f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.5s; /* Slower transition */
+}
+
+.nav-links li a.active {
+    font-weight: 700; 
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-links li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #fff, #ffffff, #fff);
+    background-size: 200% 2px; 
+    background-position: 100% 50%;
+    transition: background-position 0.3s; 
+}
+
+.nav-links li a.active:hover::after {
+    background-position: 0 50%; 
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: linear-gradient(135deg, #122638, #1d415f);
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger:hover div {
+        background-color: #ccc;
+    }
+
+    /* Additional CSS for closing navbar when link is clicked */
+    .nav-links li a {
+        cursor: pointer;
+    }
+}
+
+/* Additional hover effect for navbar links */
+.nav-links li a:hover {
+    color: #6e96b9; /* Adjusted hover color */
+    transform: translateY(-3px);
+}
+
+.mainfile {
+    list-style-type: none; /* Remove default bullet point */
+    display: inline-block; /* Display as inline block */
+    padding: 5px; /* Add padding for spacing */
+}
+
+.mainfile img {
+    width: 50px; /* Adjust the width of the image */
+    height: 100px; /* Adjust the height of the image */
+    border-radius: 50%; /* Apply border-radius for circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s ease; /* Add transition effect */
+    background:#122638;
+    margin-left: 2px;
+}
+
+.mainfile img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.logo {
+    font-size: 20px;
+    margin: 0 auto; /* Center the logo horizontally */
+    text-decoration:solid
+}

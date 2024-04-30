@@ -1,0 +1,28 @@
+{
+    "teams": [
+      {
+        "name": "Team Alpha",
+        "players": [
+          { "name": "John Doe", "role": "Batsman" },
+          { "name": "Alice Smith", "role": "Bowler" },
+          { "name": "Bob Johnson", "role": "All-rounder" }
+        ]
+      },
+      {
+        "name": "Team Beta",
+        "players": [
+          { "name": "Emily Davis", "role": "Wicketkeeper" },
+          { "name": "Michael Brown", "role": "Batsman" },
+          { "name": "Sophia Wilson", "role": "Bowler" }
+        ]
+      },
+      {
+        "name": "Himu",
+        "players": [
+          { "name": "Emily Davis", "role": "Wicketkeeper" },
+          { "name": "Michael Brown", "role": "Batsman" },
+          { "name": "Sophia Wilson", "role": "Bowler" }
+        ]
+      }
+    ]
+  }
